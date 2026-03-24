@@ -1,0 +1,62 @@
+{
+  "features": [
+    {
+      "icon": "<i class=\"fa-solid fa-fire feature-icon\"></i>",
+      "title": "Local Dishes",
+      "text": "Enjoy authentic Nigerian favorites prepared with rich flavors and traditional recipes."
+    },
+    {
+      "icon": "<i class=\"fa-solid fa-leaf feature-icon\"></i>",
+      "title": "Fresh Ingredients",
+      "text": "We use carefully selected ingredients inspired to make ensure every dish is fresh, vibrant, and full of flavor."
+    },
+    {
+      "icon": "<i class=\"fa-solid fa-wine-bottle feature-icon\"></i>",
+      "title": "Fine Wine List",
+      "text": "A curated selection of wine and beverages thoughtfully paired to complement our Nigerian Cuisine."
+    },
+    {
+      "icon": "<i class=\"fa-solid fa-chair feature-icon\"></i>",
+      "title": "Private Dining",
+      "text": "Enjoy a refined dining experience, perfect for intimate gatherings celebrations, and special occasions."
+    }
+  ],
+  "menu": {
+    "meals": [
+      { "name": "Jollof Rice & Chicken", "desc": "Smoky party jollof with grilled chicken and fried plantain.", "price": "£18" },
+      { "name": "Egusi & Pounded Yam", "desc": "Rich melon seed stew with assorted meat and smooth pounded yam.", "price": "£20" },
+      { "name": "Suya Platter", "desc": "Spiced skewered beef with sliced onions, tomatoes and yaji.", "price": "£16" }
+    ],
+    "soups": [
+      { "name": "Pepper Soup", "desc": "Light, fiery broth with goat meat and aromatic spices.", "price": "£12" },
+      { "name": "Afang Soup", "desc": "Afang leaves and waterleaf cooked with assorted seafood.", "price": "£15" },
+      { "name": "Ofe Onugbu", "desc": "Bitter leaf soup slow-cooked with oxtail and crayfish.", "price": "£14" }
+    ],
+    "drinks": [
+      { "name": "Zobo Royale", "desc": "Chilled hibiscus drink infused with ginger and pineapple.", "price": "£6" },
+      { "name": "Chapman", "desc": "Classic Nigerian cocktail with Fanta, Sprite and Angostura bitters.", "price": "£7" },
+      { "name": "Palm Wine", "desc": "Freshly tapped, lightly fermented and naturally sweet.", "price": "£8" }
+    ]
+  },
+  "gallery": [
+    { "src": "images/restaurant-dining-room.jpg", "alt": "Restaurant dining room" },
+    { "src": "images/chef-at-the-kitchen.jpg", "alt": "Chef at the kitchen" },
+    { "src": "images/jollof-rice.jpg", "alt": "Jollof rice" },
+    { "src": "images/pepper-soup.jpg", "alt": "Pepper soup" },
+    { "src": "images/Suya.jpg", "alt": "Suya skewers" },
+    { "src": "images/puff-puff.jpg", "alt": "Puff puff" },
+    { "src": "images/afang-soup-and-eba.jpg", "alt": "Afang soup and eba" },
+    { "src": "gallery/friedrice.jpg", "alt": "Fried rice" },
+    { "src": "gallery/1762770233goglow foods nkwobi.jpeg", "alt": "Nkwobi" },
+    { "src": "gallery/41ca6dfc48714647a813a6c1333a9e94.jpg", "alt": "Nigerian food spread" },
+    { "src": "gallery/afia efere soup sisi yemmie.JPG", "alt": "Afia efere soup" },
+    { "src": "gallery/nigerian-food-afang-soup.jpg.webp", "alt": "Afang soup" },
+    { "src": "gallery/nigerian-food-dodo.jpg.webp", "alt": "Fried plantain" },
+    { "src": "gallery/Top-21-Nigerian-Foods-.webp", "alt": "Nigerian food selection" },
+    { "src": "gallery/image-289.webp", "alt": "Nigerian cuisine" }
+  ],
+  "times": [
+    "6:00 PM", "6:30 PM", "7:00 PM", "7:30 PM",
+    "8:00 PM", "8:30 PM", "9:00 PM", "9:30 PM"
+  ]
+}

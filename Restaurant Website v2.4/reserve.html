@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book a Table · Chi & Oma</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header">
+      <div class="header-inner">
+        <a href="index.html" class="logo"
+          ><i class="fa-solid fa-bowl-food"></i> Chi &amp; Oma</a
+        >
+        <nav>
+          <ul id="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="reserve.html">Reserve</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </nav>
+        <a href="reserve.html" class="btn-orange">Book a Table</a>
+        <button id="hamburger" aria-label="Open menu">&#9776;</button>
+      </div>
+    </header>
+
+    <!-- PAGE HERO -->
+    <div class="reserve-page-hero">
+      <div class="hero-overlay"></div>
+      <div class="reserve-page-hero-text">
+        <h1>Book a Table</h1>
+      </div>
+    </div>
+
+    <!-- Reservation form -->
+    <section class="reserve">
+      <div class="reserve-inner">
+        <div class="reserve-form-box">
+          <form id="reserve-form">
+            <h3>Make a Reservation</h3>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname">First Name</label>
+                <input
+                  type="text"
+                  id="fname"
+                  placeholder="e.g. John"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="lname">Last Name</label>
+                <input
+                  type="text"
+                  id="lname"
+                  placeholder="e.g. Smith"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="reservations@chiandoma.com"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  placeholder="+44 (734) 439-4870"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="date">Date</label>
+                <input type="date" id="date" required />
+              </div>
+              <div class="form-group">
+                <label for="guests">Guests</label>
+                <select id="guests" required>
+                  <option value="">Choose...</option>
+                  <option value="1">1 Guest</option>
+                  <option value="2">2 Guests</option>
+                  <option value="3">3 Guests</option>
+                  <option value="4">4 Guests</option>
+                  <option value="5">5 Guests</option>
+                  <option value="6">6 Guests</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Pick a Time</label>
+              <div id="time-slots" class="time-slots"></div>
+              <input type="hidden" id="chosen-time" />
+            </div>
+
+            <button type="submit" class="btn-submit">
+              Confirm Reservation
+            </button>
+          </form>
+
+          <div id="success-box" class="success-box" style="display: none">
+            <div class="success-icon">&#x2705;</div>
+            <h3>Booking Confirmed!</h3>
+            <p id="success-message"></p>
+            <button id="book-again" class="btn-submit">
+              Make Another Booking
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="footer-inner">
+        <div>
+          <p class="footer-logo">
+            <i class="fa-solid fa-bowl-food"></i> Chi &amp; Oma
+          </p>
+          <p class="footer-desc">
+            Nigeria's finest recipes cooked to perfection. An intimate dining
+            experience you will never forget.
+          </p>
+          <div class="social-links">
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              aria-label="Instagram"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="https://facebook.com" target="_blank" aria-label="Facebook"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a href="https://twitter.com" target="_blank" aria-label="Twitter"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+            <a href="https://tiktok.com" target="_blank" aria-label="TikTok"
+              ><i class="fa-brands fa-tiktok"></i
+            ></a>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#features">Top Picks</a></li>
+            <li><a href="reserve.html">Reserve</a></li>
+            <li><a href="index.html#gallery">Gallery</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact Us</h4>
+          <p>
+            <i class="fa-solid fa-location-dot"></i> Maurepas Way, Waterlooville
+            PO7 7AH
+          </p>
+          <p><i class="fa-solid fa-phone"></i> +44 (734) 439-4870</p>
+          <p><i class="fa-solid fa-envelope"></i> reservations@chiandoma.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          &copy; <span id="year"></span> Chi &amp; Oma. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

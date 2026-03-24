@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu · Chi & Oma</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header">
+      <div class="header-inner">
+        <a href="index.html" class="logo"
+          ><i class="fa-solid fa-bowl-food"></i> Chi &amp; Oma</a
+        >
+        <nav>
+          <ul id="nav-list">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="reserve.html">Reserve</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </nav>
+        <a href="reserve.html" class="btn-orange">Book a Table</a>
+        <button id="hamburger" aria-label="Open menu">&#9776;</button>
+      </div>
+    </header>
+
+    <!-- Page Hero -->
+    <div class="menu-page-hero">
+      <div class="hero-overlay"></div>
+      <div class="menu-page-hero-text">
+        <h1>Our Menu</h1>
+      </div>
+    </div>
+
+    <!-- This is the Menu Section -->
+    <section class="menu-page">
+      <!-- My Menu Tabs -->
+      <div class="menu-tabs">
+        <button class="menu-tab active" data-tab="food">
+          <i class="fa-solid fa-bowl-food"></i> Food
+        </button>
+        <button class="menu-tab" data-tab="soups">
+          <i class="fa-solid fa-fire-flame-curved"></i> Soups
+        </button>
+        <button class="menu-tab" data-tab="drinks">
+          <i class="fa-solid fa-wine-glass"></i> Drinks
+        </button>
+      </div>
+
+      <!-- My Foods -->
+      <div class="menu-category active" id="tab-food">
+        <div class="menu-cards">
+          <div class="menu-card">
+            <img src="gallery/friedrice.jpg" alt="Fried Rice" />
+            <div class="menu-card-body">
+              <div class="menu-card-top">
+                <h3>Fried Rice &amp; Chicken</h3>
+                <span class="menu-card-price">&pound;18</span>
+              </div>
+              <p>
+                Fragrant fried rice cooked with mixed vegetables and served with
+                crispy grilled chicken.
+              </p>
+            </div>
+          </div>
+          <div class="menu-card">
+            <img
+              src="gallery/Top-21-Nigerian-Foods-.webp"
+              alt="Nigerian Food"
+            />
+            <div class="menu-card-body">
+              <div class="menu-card-top">
+                <h3>Jollof Rice &amp; Chicken</h3>
+                <span class="menu-card-price">&pound;18</span>
+              </div>
+              <p>
+                Smoky party jollof with grilled chicken and fried plantain on
+                the side.
+              </p>
+            </div>
+          </div>
+          <div class="menu-card">
+            <img src="gallery/nigerian-food-dodo.jpg.webp" alt="Dodo" />
+            <div class="menu-card-body">
+              <div class="menu-card-top">
+                <h3>Dodo &amp; Egg</h3>
+                <span class="menu-card-price">&pound;10</span>
+              </div>
+              <p>
+                Sweet fried plantain served with a spiced egg sauce — a Nigerian
+                comfort classic.
+              </p>
+            </div>
+          </div>
+          <div class="menu-card">
+            <img src="images/Suya.jpg" alt="Suya" />
+            <div class="menu-card-body">
+              <div class="menu-card-top">
+                <h3>Suya Platter</h3>
+                <span class="menu-card-price">&pound;16</span>
+              </div>
+              <p>
+                Spiced skewered beef with sliced onions, tomatoes and yaji spice
+                blend.
+              </p>
+            </div>
+          </div>
+          <div class="menu-card">
+            <img
+              src="gallery/1762770233goglow foods nkwobi.jpeg"
+              alt="Nkwobi"
+            />
+            <div class="menu-card-body">
+              <div class="menu-card-top">
+                <h3>Nkwobi</h3>
+                <span class="menu-card-price">&pound;17</span>
+              </div>
+              <p>
+                Spiced cow foot cooked in a rich palm oil sauce with utazi
+                leaves.
+              </p>
+            </div>
+          </div>
+          <div class="menu-card">
+            <img src="images/puff-puff.jpg" alt="Puff Puff" />
+            <div class="menu-card-body">
+              <div class="menu-card-top">
+                <h3>Puff Puff</h3>
+                <span class="menu-card-price">&pound;6</span>
+              </div>
+              <p>
+                Light, golden deep-fried dough balls dusted with sugar — a
+                beloved street-food classic.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Soups -->
+      <div class="menu-category" id="tab-soups">
+        <div class="menu-cards">
+          <div class="menu-card">
+            <img src="images/pepper-soup.jpg" alt="Pepper Soup" />
+            <div class="menu-card-body">
+              <div class="menu-card-top">
+                <h3>Goat Pepper Soup</h3>
+                <span class="menu-card-price">&pound;12</span>
+              </div>
+              <p>
+                Light, fiery broth with tender goat meat and aromatic pepper
+                soup spices.
+              </p>
+            </div>
+          </div>
+          <div class="menu-card">
+            <img src="images/afang-soup-and-eba.jpg" alt="Afang Soup" />
+            <div class="menu-card-body">
+              <div class="menu-card-top">
+                <h3>Afang Soup &amp; Eba</h3>
+                <span class="menu-card-price">&pound;15</span>
+              </div>
+              <p>
+                Afang leaves and waterleaf cooked with assorted seafood, served
+                with eba.
+              </p>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <img
+              src="gallery/nigerian-food-afang-soup.jpg.webp"
+              alt="Afang Soup"
+            />
+            <div class="menu-card-body">
+              <div class="menu-card-top">
+                <h3>Ofe Onugbu</h3>
+                <span class="menu-card-price">&pound;14</span>
+              </div>
+              <p>
+                Bitter leaf soup slow-cooked with oxtail, assorted meat and
+                crayfish.
+              </p>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <img
+              src="gallery/afia efere soup sisi yemmie.JPG"
+              alt="Afia Efere"
+            />
+            <div class="menu-card-body">
+              <div class="menu-card-top">
+                <h3>Afia Efere</h3>
+                <span class="menu-card-price">&pound;15</span>
+              </div>
+              <p>
+                A delicate white soup from the Efik people, cooked with fresh
+                fish and cocoyam.
+              </p>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <img
+              src="gallery/41ca6dfc48714647a813a6c1333a9e94.jpg"
+              alt="Egusi Soup"
+            />
+            <div class="menu-card-body">
+              <div class="menu-card-top">
+                <h3>Egusi Soup</h3>
+                <span class="menu-card-price">&pound;14</span>
+              </div>
+              <p>
+                Rich melon seed soup cooked with assorted meat, stockfish and
+                leafy greens.
+              </p>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <img src="gallery/image-289.webp" alt="Banga Soup" />
+            <div class="menu-card-body">
+              <div class="menu-card-top">
+                <h3>Banga Soup</h3>
+                <span class="menu-card-price">&pound;15</span>
+              </div>
+              <p>
+                Palm nut soup with oxtail and banga spices, served with starch
+                or pounded yam.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DRINKS -->
+      <div class="menu-category" id="tab-drinks">
+        <div class="menu-cards">
+          <div class="menu-card">
+            <img src="images/restaurant-dining-room.jpg" alt="Zobo" />
+            <div class="menu-card-body">
+              <div class="menu-card-top">
+                <h3>Zobo Royale</h3>
+                <span class="menu-card-price">&pound;6</span>
+              </div>
+              <p>
+                Chilled hibiscus drink infused with ginger, pineapple and a hint
+                of cloves.
+              </p>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <img src="images/chef-at-the-kitchen.jpg" alt="Chapman" />
+            <div class="menu-card-body">
+              <div class="menu-card-top">
+                <h3>Chapman</h3>
+                <span class="menu-card-price">&pound;7</span>
+              </div>
+              <p>
+                Classic Nigerian cocktail with Fanta, Sprite, Angostura bitters
+                and cucumber.
+              </p>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <img src="gallery/friedrice.jpg" alt="Palm Wine" />
+            <div class="menu-card-body">
+              <div class="menu-card-top">
+                <h3>Palm Wine</h3>
+                <span class="menu-card-price">&pound;8</span>
+              </div>
+              <p>
+                Freshly tapped, lightly fermented and naturally sweet palm wine
+                served chilled.
+              </p>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <img src="gallery/nigerian-food-dodo.jpg.webp" alt="Kunu" />
+            <div class="menu-card-body">
+              <div class="menu-card-top">
+                <h3>Kunu Aya</h3>
+                <span class="menu-card-price">&pound;5</span>
+              </div>
+              <p>
+                A smooth, creamy tiger nut drink blended with dates and coconut.
+              </p>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <img src="gallery/Top-21-Nigerian-Foods-.webp" alt="Fura da Nono" />
+            <div class="menu-card-body">
+              <div class="menu-card-top">
+                <h3>Fura da Nono</h3>
+                <span class="menu-card-price">&pound;6</span>
+              </div>
+              <p>
+                Chilled fermented milk blended with millet balls, ginger and
+                spices.
+              </p>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <img src="gallery/image-289.webp" alt="Bissap" />
+            <div class="menu-card-body">
+              <div class="menu-card-top">
+                <h3>Bissap Lemonade</h3>
+                <span class="menu-card-price">&pound;6</span>
+              </div>
+              <p>
+                Hibiscus and lemon juice over ice with a sprig of fresh mint.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+      <div class="footer-inner">
+        <div>
+          <p class="footer-logo">
+            <i class="fa-solid fa-bowl-food"></i> Chi &amp; Oma
+          </p>
+          <p class="footer-desc">
+            Nigeria's finest recipes cooked to perfection. An intimate dining
+            experience you will never forget.
+          </p>
+          <div class="social-links">
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              aria-label="Instagram"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="https://facebook.com" target="_blank" aria-label="Facebook"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a href="https://twitter.com" target="_blank" aria-label="Twitter"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+            <a href="https://tiktok.com" target="_blank" aria-label="TikTok"
+              ><i class="fa-brands fa-tiktok"></i
+            ></a>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Top Picks</a></li>
+            <li><a href="reserve.html">Reserve</a></li>
+            <li><a href="index.html#gallery">Gallery</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact Us</h4>
+          <p>
+            <i class="fa-solid fa-location-dot"></i> Maurepas Way, Waterlooville
+            PO7 7AH
+          </p>
+          <p><i class="fa-solid fa-phone"></i> +44 (734) 439-4870</p>
+          <p><i class="fa-solid fa-envelope"></i> reservations@chiandoma.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          &copy; <span id="year"></span> Chi &amp; Oma. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+      document.querySelectorAll(".menu-tab").forEach(function (tab) {
+        tab.addEventListener("click", function () {
+          document.querySelectorAll(".menu-tab").forEach(function (t) {
+            t.classList.remove("active");
+          });
+          document.querySelectorAll(".menu-category").forEach(function (c) {
+            c.classList.remove("active");
+          });
+          tab.classList.add("active");
+          document
+            .getElementById("tab-" + tab.dataset.tab)
+            .classList.add("active");
+        });
+      });
+    </script>
+  </body>
+</html>

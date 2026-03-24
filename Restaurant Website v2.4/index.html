@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chi & Oma</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header Section-->
+    <header id="header">
+      <div class="header-inner">
+        <a href="#home" class="logo"
+          ><i class="fa-solid fa-bowl-food"></i> Chi &amp; Oma</a
+        >
+        <nav>
+          <ul id="nav-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="reserve.html">Reserve</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </nav>
+        <a href="reserve.html" class="btn-orange">Book a Table</a>
+        <button id="hamburger" aria-label="Open menu">&#9776;</button>
+      </div>
+    </header>
+
+    <!-- Hero Section-->
+    <section id="home" class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-text">
+        <h1>Authentic Nigerian Flavours</h1>
+        <p class="hero-desc">
+          Inspired by cherished family recipes, served with warmth and love.
+        </p>
+        <div class="hero-buttons">
+          <a href="reserve.html" class="btn-orange">Book a Table</a>
+          <a href="menu.html" class="btn-clear">See Menu</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Top Picks Section -->
+    <section id="features" class="top-picks-section">
+      <div class="section-top">
+        <p class="label">Chef's Selection</p>
+        <h2>Our Top Picks</h2>
+      </div>
+      <div class="top-picks-grid">
+        <div class="pick-card">
+          <div class="pick-img-wrap">
+            <img src="images/jollof-rice.jpg" alt="Jollof Rice" />
+            <span class="pick-price">&pound;14.99</span>
+          </div>
+          <div class="pick-body">
+            <h3>Party Jollof Rice</h3>
+            <p>
+              Smoky, slow-cooked tomato rice with a rich blend of West African
+              spices, served with fried plantain.
+            </p>
+          </div>
+        </div>
+        <div class="pick-card">
+          <div class="pick-img-wrap">
+            <img src="images/pepper-soup.jpg" alt="Pepper Soup" />
+            <span class="pick-price">&pound;11.50</span>
+          </div>
+          <div class="pick-body">
+            <h3>Goat Pepper Soup</h3>
+            <p>
+              A bold, aromatic broth loaded with tender goat meat and
+              traditional Nigerian pepper soup spices.
+            </p>
+          </div>
+        </div>
+        <div class="pick-card">
+          <div class="pick-img-wrap">
+            <img src="images/Suya.jpg" alt="Suya" />
+            <span class="pick-price">&pound;13.00</span>
+          </div>
+          <div class="pick-body">
+            <h3>Beef Suya Skewers</h3>
+            <p>
+              Flame-grilled beef skewers coated in a spiced groundnut rub,
+              served with sliced onions and tomatoes.
+            </p>
+          </div>
+        </div>
+        <div class="pick-card">
+          <div class="pick-img-wrap">
+            <img src="images/puff-puff.jpg" alt="Puff Puff" />
+            <span class="pick-price">&pound;6.50</span>
+          </div>
+          <div class="pick-body">
+            <h3>Puff Puff</h3>
+            <p>
+              Light, golden deep-fried dough balls dusted with sugar &mdash; a
+              beloved Nigerian street-food classic.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about-section">
+      <div class="about-container">
+        <img src="images/restaurant-dining-room.jpg" alt="Our dining room" />
+        <div class="about-text">
+          <p class="label">Our Story</p>
+          <h2>More Than a Meal, <em>A Memory</em></h2>
+          <p>
+            At Chi & Oma, every meal begins with a memory. What started as a
+            shared passion between childhood friends Chidera and Oma has grown
+            into a space where Nigerian flavours come alive. Inspired by the
+            kitchens they grew up in, they created a restaurant that brings the
+            warmth, comfort and heart of a true Naija home to the city.
+          </p>
+          <p>
+            From smoky jollof to rich pepper soup, every dish is prepared with
+            care, using trusted local and West African ingredients. Whether
+            you’re joining us for a quiet meal or a celebration, we want you to
+            leave feeling nourished, welcomed and connected.
+          </p>
+          <p><em>Chi & Oma is more than food. It’s home.</em></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+      <div class="section-top">
+        <p class="label">Gallery</p>
+        <h2>A Feast for the Eyes</h2>
+      </div>
+      <div class="gallery-slider">
+        <div class="gallery-col" id="gallery-col-0"></div>
+        <div class="gallery-col" id="gallery-col-1"></div>
+        <div class="gallery-col" id="gallery-col-2"></div>
+      </div>
+    </section>
+
+    <!-- Feedback & Map -->
+    <section id="feedback" class="feedback">
+      <div class="section-top">
+        <p class="label">Your Thoughts</p>
+        <h2>Leave Us Feedback</h2>
+      </div>
+      <div class="feedback-inner">
+        <div class="feedback-form-box">
+          <h3>Share Your Experience</h3>
+          <form id="feedback-form">
+            <div class="form-group">
+              <label for="fb-name">Your Name</label>
+              <input
+                type="text"
+                id="fb-name"
+                placeholder="e.g. Jane Doe"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="fb-email">Email</label>
+              <input
+                type="email"
+                id="fb-email"
+                placeholder="you@email.com"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="fb-rating">Rating</label>
+              <select id="fb-rating" required>
+                <option value="">Choose...</option>
+                <option value="5">
+                  &#11088; &#11088; &#11088; &#11088; &#11088; Excellent
+                </option>
+                <option value="4">
+                  &#11088; &#11088; &#11088; &#11088; Very Good
+                </option>
+                <option value="3">&#11088; &#11088; &#11088; Good</option>
+                <option value="2">&#11088; &#11088; Fair</option>
+                <option value="1">&#11088; Poor</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="fb-message">Message</label>
+              <textarea
+                id="fb-message"
+                rows="5"
+                placeholder="Tell us about your visit..."
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn-submit">Send Feedback</button>
+          </form>
+        </div>
+        <div class="feedback-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2517.435182731297!2d-1.0377074227158216!3d50.87865545643923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48744376dc6e722f%3A0x4be24e13dc1305d5!2sMaurepas%20Way%2C%20Waterlooville%20PO7%207AH!5e0!3m2!1sen!2suk!4v1774341622389!5m2!1sen!2suk"
+            width="100%"
+            height="100%"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Restaurant location"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="footer-inner">
+        <div>
+          <p class="footer-logo">
+            <i class="fa-solid fa-bowl-food"></i> Chi&amp;Oma
+          </p>
+          <p class="footer-desc">
+            Nigeria's finest recipes cooked to perfection. An intimate dining
+            experience you will never forget.
+          </p>
+          <div class="social-links">
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              aria-label="Instagram"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="https://facebook.com" target="_blank" aria-label="Facebook"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a href="https://twitter.com" target="_blank" aria-label="Twitter"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+            <a href="https://tiktok.com" target="_blank" aria-label="TikTok"
+              ><i class="fa-brands fa-tiktok"></i
+            ></a>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Top Picks</a></li>
+            <li><a href="reserve.html">Reserve</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact Us</h4>
+          <p>
+            <i class="fa-solid fa-location-dot"></i> Maurepas Way, Waterlooville
+            PO7 7AH
+          </p>
+          <p><i class="fa-solid fa-phone"></i> +44 (734) 439-4870</p>
+          <p><i class="fa-solid fa-envelope"></i> reservations@chiandoma.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span>Chi&amp;Oma. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
