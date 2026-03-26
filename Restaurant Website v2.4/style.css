@@ -285,8 +285,9 @@ h2 em {
 }
 
 @media (max-width: 600px) {
-  .btn-orange {
-    display: inline-block;
+  .hero-buttons .btn-orange,
+  .hero-buttons .btn-clear,
+  .header-inner .btn-orange {
     padding: 10px 12px;
     font-size: 8px;
     white-space: nowrap;
