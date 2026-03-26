@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
   setupFooterYear();
   loadData();
   if (document.getElementById("reserve-form")) setupForm();
+  setupMenuTabs();
 });
 
 function setupHeader() {
@@ -35,12 +36,72 @@ function loadData() {
   fetch("data.json")
     .then(function (response) { return response.json(); })
     .then(function (data) {
+      if (document.getElementById("top-picks-grid")) buildTopPicks(data.topPicks);
       if (document.getElementById("gallery-col-0")) buildGallery(data.gallery);
       if (document.getElementById("time-slots")) buildTimeSlots(data.times);
+      if (document.getElementById("menu-cards-food")) buildMenu(data.menu);
     })
     .catch(function (error) {
       console.error("Could not load data.json:", error);
     });
+}
+
+function buildTopPicks(picks) {
+  var grid = document.getElementById("top-picks-grid");
+  picks.forEach(function (pick) {
+    var card = document.createElement("div");
+    card.className = "pick-card";
+    card.innerHTML =
+      '<div class="pick-img-wrap">' +
+        '<img src="' + pick.img + '" alt="' + pick.alt + '" loading="lazy" />' +
+        '<span class="pick-price">' + pick.price + '</span>' +
+      '</div>' +
+      '<div class="pick-body">' +
+        '<h3>' + pick.name + '</h3>' +
+        '<p>' + pick.desc + '</p>' +
+      '</div>';
+    grid.appendChild(card);
+  });
+}
+
+function buildMenu(menu) {
+  renderMenuCards("menu-cards-food", menu.meals);
+  renderMenuCards("menu-cards-soups", menu.soups);
+  renderMenuCards("menu-cards-drinks", menu.drinks);
+}
+
+function renderMenuCards(containerId, items) {
+  var container = document.getElementById(containerId);
+  if (!container) return;
+  items.forEach(function (item) {
+    var card = document.createElement("div");
+    card.className = "menu-card";
+    card.innerHTML =
+      '<img src="' + item.img + '" alt="' + item.alt + '" loading="lazy" />' +
+      '<div class="menu-card-body">' +
+        '<div class="menu-card-top">' +
+          '<h3>' + item.name + '</h3>' +
+          '<span class="menu-card-price">' + item.price + '</span>' +
+        '</div>' +
+        '<p>' + item.desc + '</p>' +
+      '</div>';
+    container.appendChild(card);
+  });
+}
+
+function setupMenuTabs() {
+  var tabs = document.querySelectorAll(".menu-tab");
+  if (!tabs.length) return;
+  tabs.forEach(function (tab) {
+    tab.addEventListener("click", function () {
+      tabs.forEach(function (t) { t.classList.remove("active"); });
+      document.querySelectorAll(".menu-category").forEach(function (c) {
+        c.classList.remove("active");
+      });
+      tab.classList.add("active");
+      document.getElementById("tab-" + tab.dataset.tab).classList.add("active");
+    });
+  });
 }
 
 function buildGallery(photos) {

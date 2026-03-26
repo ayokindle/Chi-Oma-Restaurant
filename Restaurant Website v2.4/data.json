@@ -1,41 +1,58 @@
 {
-  "features": [
+  "topPicks": [
     {
-      "icon": "<i class=\"fa-solid fa-fire feature-icon\"></i>",
-      "title": "Local Dishes",
-      "text": "Enjoy authentic Nigerian favorites prepared with rich flavors and traditional recipes."
+      "img": "images/jollof-rice.jpg",
+      "alt": "Jollof Rice",
+      "name": "Party Jollof Rice",
+      "desc": "Smoky, slow-cooked tomato rice with a rich blend of West African spices, served with fried plantain.",
+      "price": "£14.99"
     },
     {
-      "icon": "<i class=\"fa-solid fa-leaf feature-icon\"></i>",
-      "title": "Fresh Ingredients",
-      "text": "We use carefully selected ingredients inspired to make ensure every dish is fresh, vibrant, and full of flavor."
+      "img": "images/pepper-soup.jpg",
+      "alt": "Pepper Soup",
+      "name": "Goat Pepper Soup",
+      "desc": "A bold, aromatic broth loaded with tender goat meat and traditional Nigerian pepper soup spices.",
+      "price": "£11.50"
     },
     {
-      "icon": "<i class=\"fa-solid fa-wine-bottle feature-icon\"></i>",
-      "title": "Fine Wine List",
-      "text": "A curated selection of wine and beverages thoughtfully paired to complement our Nigerian Cuisine."
+      "img": "images/Suya.jpg",
+      "alt": "Suya",
+      "name": "Beef Suya Skewers",
+      "desc": "Flame-grilled beef skewers coated in a spiced groundnut rub, served with sliced onions and tomatoes.",
+      "price": "£13.00"
     },
     {
-      "icon": "<i class=\"fa-solid fa-chair feature-icon\"></i>",
-      "title": "Private Dining",
-      "text": "Enjoy a refined dining experience, perfect for intimate gatherings celebrations, and special occasions."
+      "img": "images/puff-puff.jpg",
+      "alt": "Puff Puff",
+      "name": "Puff Puff",
+      "desc": "Light, golden deep-fried dough balls dusted with sugar — a beloved Nigerian street-food classic.",
+      "price": "£6.50"
     }
   ],
   "menu": {
     "meals": [
-      { "name": "Jollof Rice & Chicken", "desc": "Smoky party jollof with grilled chicken and fried plantain.", "price": "£18" },
-      { "name": "Egusi & Pounded Yam", "desc": "Rich melon seed stew with assorted meat and smooth pounded yam.", "price": "£20" },
-      { "name": "Suya Platter", "desc": "Spiced skewered beef with sliced onions, tomatoes and yaji.", "price": "£16" }
+      { "name": "Fried Rice & Chicken", "desc": "Fragrant fried rice cooked with mixed vegetables and served with crispy grilled chicken.", "price": "£18", "img": "images/fried-rice-.jpg", "alt": "Fried Rice" },
+      { "name": "Jollof Rice & Chicken", "desc": "Smoky party jollof with grilled chicken and fried plantain on the side.", "price": "£18", "img": "images/jollof rice and chicken.webp", "alt": "Jollof Rice" },
+      { "name": "Dodo & Egg", "desc": "Sweet fried plantain served with a spiced egg sauce — a Nigerian comfort classic.", "price": "£10", "img": "images/dodo and egg.jpg", "alt": "Dodo" },
+      { "name": "Suya Platter", "desc": "Spiced skewered beef with sliced onions, tomatoes and yaji spice blend.", "price": "£16", "img": "images/Suya.jpg", "alt": "Suya" },
+      { "name": "Nkwobi", "desc": "Spiced cow foot cooked in a rich palm oil sauce with utazi leaves.", "price": "£17", "img": "gallery/1762770233goglow foods nkwobi.jpeg", "alt": "Nkwobi" },
+      { "name": "Puff Puff", "desc": "Light, golden deep-fried dough balls dusted with sugar — a beloved street-food classic.", "price": "£6", "img": "images/puff-puff.jpg", "alt": "Puff Puff" }
     ],
     "soups": [
-      { "name": "Pepper Soup", "desc": "Light, fiery broth with goat meat and aromatic spices.", "price": "£12" },
-      { "name": "Afang Soup", "desc": "Afang leaves and waterleaf cooked with assorted seafood.", "price": "£15" },
-      { "name": "Ofe Onugbu", "desc": "Bitter leaf soup slow-cooked with oxtail and crayfish.", "price": "£14" }
+      { "name": "Goat Pepper Soup", "desc": "Light, fiery broth with tender goat meat and aromatic pepper soup spices.", "price": "£12", "img": "images/pepper-soup.jpg", "alt": "Pepper Soup" },
+      { "name": "Afang Soup & Eba", "desc": "Afang leaves and waterleaf cooked with assorted seafood, served with eba.", "price": "£15", "img": "images/afang-soup-and-eba.jpg", "alt": "Afang Soup" },
+      { "name": "Ofe Onugbu", "desc": "Bitter leaf soup slow-cooked with oxtail, assorted meat and crayfish.", "price": "£14", "img": "gallery/nigerian-food-afang-soup.jpg.webp", "alt": "Ofe Onugbu" },
+      { "name": "Afia Efere", "desc": "A delicate white soup from the Efik people, cooked with fresh fish and cocoyam.", "price": "£15", "img": "gallery/afia efere soup sisi yemmie.JPG", "alt": "Afia Efere" },
+      { "name": "Egusi Soup", "desc": "Rich melon seed soup cooked with assorted meat, stockfish and leafy greens.", "price": "£14", "img": "images/Recipe-for-Egusi-Soup.webp", "alt": "Egusi Soup" },
+      { "name": "Banga Soup", "desc": "Palm nut soup with oxtail and banga spices, served with starch or pounded yam.", "price": "£15", "img": "images/banga-stew-ofe-akwu.webp", "alt": "Banga Soup" }
     ],
     "drinks": [
-      { "name": "Zobo Royale", "desc": "Chilled hibiscus drink infused with ginger and pineapple.", "price": "£6" },
-      { "name": "Chapman", "desc": "Classic Nigerian cocktail with Fanta, Sprite and Angostura bitters.", "price": "£7" },
-      { "name": "Palm Wine", "desc": "Freshly tapped, lightly fermented and naturally sweet.", "price": "£8" }
+      { "name": "Zobo Royale", "desc": "Chilled hibiscus drink infused with ginger, pineapple and a hint of cloves.", "price": "£6", "img": "images/zobo.jpg", "alt": "Zobo" },
+      { "name": "Chapman", "desc": "Classic Nigerian cocktail with Fanta, Sprite, Angostura bitters and cucumber.", "price": "£7", "img": "images/chapman.jpg", "alt": "Chapman" },
+      { "name": "Palm Wine", "desc": "Freshly tapped, lightly fermented and naturally sweet palm wine served chilled.", "price": "£8", "img": "images/palm-wine.jpg", "alt": "Palm Wine" },
+      { "name": "Kunu Aya", "desc": "A smooth, creamy tiger nut drink blended with dates and coconut.", "price": "£5", "img": "images/tiger-nut-milk.webp", "alt": "Kunu" },
+      { "name": "Fura da Nono", "desc": "Chilled fermented milk blended with millet balls, ginger and spices.", "price": "£6", "img": "images/fura.jpg", "alt": "Fura da Nono" },
+      { "name": "Bissap Lemonade", "desc": "Hibiscus and lemon juice over ice with a sprig of fresh mint.", "price": "£6", "img": "images/The-Beauty-of-Bissap-Hero.png", "alt": "Bissap" }
     ]
   },
   "gallery": [
